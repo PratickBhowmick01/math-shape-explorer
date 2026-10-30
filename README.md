@@ -31,5 +31,5 @@ Ensure you have Python installed on your system. The `turtle` module comes built
 
 2. Run the main.py script:
    ```bash
-cd math-shape-explorer
-python main.py
+   cd math-shape-explorer
+   python main.py
