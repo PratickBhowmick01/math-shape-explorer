@@ -29,6 +29,7 @@ Ensure you have Python installed on your system. The `turtle` module comes built
    ```bash
    git clone [https://github.com/PratickBhowmick01/math-shape-explorer.git](https://github.com/PratickBhowmick01/math-shape-explorer.git)
 
-2. Run the main.py script.
+2. Run the main.py script:
+   ```bash
 cd math-shape-explorer
 python main.py
