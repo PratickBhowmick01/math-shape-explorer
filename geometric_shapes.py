@@ -1,23 +1,16 @@
 # Setup 
 import math, turtle 
 
-screen = turtle.Screen()
-screen.setup(width=800, height=600)
-screen.title("Geometric Shapes Drawing")
-
-shanjay = turtle.Turtle()
-shanjay.color("royalblue")
-shanjay.speed(10)
-shanjay.penup()
-shanjay.goto(-50, 100)
-shanjay.pendown()
-
-
 '''
 Regular Polygon
 '''
 
-def polygon():
+def polygon(shanjay):
+    # Setup
+    shanjay.color("royalblue")
+    shanjay.penup()
+    shanjay.goto(-50, 100)
+    shanjay.pendown()
     
     sides = int(input("Please enter the number of sides of the polygon: "))
     while sides < 3:
@@ -33,14 +26,16 @@ def polygon():
     return
 
 
-# polygon()
-
-
 '''
 Rhombus
 '''
-
-def rhombus():
+def rhombus(shanjay):
+    # Setup
+    shanjay.color("royalblue")
+    shanjay.penup()
+    shanjay.goto(-50, 100)
+    shanjay.pendown()
+    
     angle = int(input("Please enter the angle of the rhombus: "))
     while angle > 180 or angle < 0:
         print("The angle of a rhombus must be between 0 and 180 degrees.")
@@ -52,15 +47,17 @@ def rhombus():
         shanjay.forward(200)
         shanjay.right(angle)
 
-# rhombus()
-
 
 '''
 Concentric Circles
 '''
 
-def concentric_circles():
-    screen.tracer(0)        # removes tracing
+def concentric_circles(shanjay):
+    shanjay.color("royalblue")
+    shanjay.penup()
+    shanjay.goto(-50, 100)
+    shanjay.pendown()
+    # screen.tracer(0)        # removes tracing
     
     for i in range(360):
         shanjay.forward(2)
@@ -75,14 +72,4 @@ def concentric_circles():
     for i in range(360):
         shanjay.forward(3)
         shanjay.right(1)
-        
-    screen.update()
-    
     # Can also use shanjay.circle() for simplification 
-
-# rhombus()
-# polygon()        
-concentric_circles()
-
-
-screen.exitonclick() 
